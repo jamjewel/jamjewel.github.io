@@ -315,15 +315,17 @@
             padding: 0;
         }
         .video-item {
-            flex: 0 0 calc(33.33% - 20px);
-            max-width: calc(33.33% - 20px);
+            flex: 0 0 calc(33.33% - 40px); /* Increased spacing between blocks */
+            max-width: calc(33.33% - 40px); /* Increased spacing between blocks */
             margin-bottom: 40px; /* Increased margin for more space between videos */
+            background-color: white; /* White background for each block */
+            padding: 20px; /* Added padding for spacing within the block */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the block */
         }
         .video-content {
             border: 1px solid #ddd;
             background-color: white;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .video-container {
             position: relative;
@@ -338,13 +340,9 @@
             border: none;
         }
         .video-description {
-            border: 1px solid #ddd;
-            border-top: none; /* Remove top border to prevent double border */
             padding: 15px;
             text-align: left;
-            background-color: #f4f4f4;
             color: #333;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -408,6 +406,7 @@
     </div>
 </body>
 </html>
+
 
 
 <!-- End #videos -->
