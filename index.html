@@ -308,16 +308,13 @@
             padding: 20px;
         }
         .video-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             list-style: none;
             padding: 0;
         }
         .video-item {
-            flex: 0 0 calc(33.33% - 20px);
-            max-width: calc(33.33% - 20px);
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
         }
         .video-content {
             border: 1px solid #ddd;
@@ -325,11 +322,15 @@
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
         }
         .video-container {
-            flex: 1;
             position: relative;
             padding-top: 56.25%; /* 16:9 aspect ratio */
+            width: 100%;
         }
         iframe {
             position: absolute;
@@ -340,12 +341,12 @@
             border: none;
         }
         .video-description {
-            flex: 1;
             padding: 15px;
             text-align: left;
             background-color: #f4f4f4;
             color: #333;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
     </style>
 </head>
@@ -390,7 +391,7 @@
                             <iframe src="https://www.youtube.com/embed/POaKTuaecDQ" allowfullscreen></iframe>
                         </div>
                         <div class="video-description">
-                            Our product "Insightopedia"  is helping the government to analyse the trends and insights related to unemployment and also providing different demographic factors that are contributing more towards unemployment. So, policy makers can make better decisions related to investments to reduce the unemployment rate and make the world a better place to live.
+                            Our product "Insightopedia"  is helping government to analyse the trends and insights related to unemployment and also providing different demographic factors that are contributing more towards unemployment. So, policy makers can make better decisions related to investments to reduce the unemployment rate and make the world a better place to live.
                         </div>
                     </div>
                 </li>
@@ -399,16 +400,8 @@
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/l54IYYFzb8I" allowfullscreen></iframe>
                         </div>
-                        <div class="video-description">
-                            Trash to Cash App will help Users to lease the device as per their requirements on a monthly or yearly basis. Also, if the User has an old device,  our platform can help them to donate those devices to the nearby NGO, and once NGO accepts their donation, then the User should be able to get some tokens which they can use as a discount on their next device lease. So this kind of token-based approach keeps users motivated to stay in this kind of economy.
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>
+                        <div class="
+
 
 
 
