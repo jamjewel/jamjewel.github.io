@@ -280,24 +280,30 @@
     </div>
     <!-- End #education -->
 
+<!-- End #education -->
+
 <div id="videos" class="background-alt">
     <h2 class="heading">Projects Storyline & Demo </h2>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2GHXjNKvSQw" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="description-shadow">
-                    <p class="description-text">Project DeCarbo is a groundbreaking initiative poised to transform the way individuals, households, and businesses interact with their carbon footprint. In an age where environmental responsibility takes center stage, DeCarbo steps forward as a beacon of positive change, offering a holistic approach towards a sustainable world.</p>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2GHXjNKvSQw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-description">
+                        <p>Project DeCarbo is a groundbreaking initiative poised to transform the way individuals, households, and businesses interact with their carbon footprint. In an age where environmental responsibility takes center stage, DeCarbo steps forward as a beacon of positive change, offering a holistic approach towards a sustainable world.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/reyStRg2A8A" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="description-shadow">
-                    <p class="description-text">The Zeroo app is Powered by a machine learning model which tries to predict the user purchase patterns and from where it is usually bought to give suitable product recommendations. This machine learning model takes data points from purchase history as input and provides recommendation value of each product to facilitate optimum buying decisions and avoid blind purchases which reduce food wastage.</p>
+                <div class="video-card">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/reyStRg2A8A" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-description">
+                        <p>The Zeroo app is Powered by a machine learning model which tries to predict the user purchase patterns and from where it is usually bought to give suitable product recommendations. This machine learning model takes data points from purchase history as input and provides recommendation value of each product to facilitate optimum buying decisions and avoid blind purchases which reduce food wastage.</p>
+                    </div>
                 </div>
             </div>
             <!-- Repeat the same structure for other videos -->
@@ -306,17 +312,20 @@
 </div>
 
 <style>
-    .description-shadow {
-        background-color: white;
-        padding: 20px;
+    .video-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
         border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
-    
-    .description-text {
-        margin: 0;
-    }
-</style>
+
+    .video-container iframe {
+        width: 100%;
+        height: 
+
 <!-- end of video-->
 
 
