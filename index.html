@@ -317,7 +317,7 @@
         .video-item {
             flex: 0 0 calc(33.33% - 20px);
             max-width: calc(33.33% - 20px);
-            margin-bottom: 20px;
+            margin-bottom: 40px; /* Increased margin for more space between videos */
         }
         .video-content {
             border: 1px solid #ddd;
@@ -338,6 +338,8 @@
             border: none;
         }
         .video-description {
+            border: 1px solid #ddd;
+            border-top: none; /* Remove top border to prevent double border */
             padding: 15px;
             text-align: left;
             background-color: #f4f4f4;
@@ -406,9 +408,6 @@
     </div>
 </body>
 </html>
-
-
-
 
 
 <!-- End #videos -->
