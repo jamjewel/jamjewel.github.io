@@ -38,7 +38,7 @@
 .video-info {
     position: absolute;
     bottom: 0; /* Initially, the info is displayed at the bottom */
-    left: 60;
+    left: 60%;
     width: 40%;
     height: 100%;
     padding: 21px;
