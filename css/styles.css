@@ -99,10 +99,6 @@
     display: none; /* Commented out the project-info section */
 }
 
-.project:hover .project-info {
-    display: block; /* Display project-info on hover */
-}
-
 .project:hover .project-image::after {
     content: "View Project";
     display: flex;
@@ -116,6 +112,7 @@
     background: rgba(0, 0, 0, 0.7);
     color: white;
     font-size: 1.2em;
+    border-radius: 4px;
 }
 
 .project:hover h3 {
@@ -138,6 +135,18 @@
     margin: 0;
     padding: 50px 21px;
     transform: none;
+}
+
+.view-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 #more-projects {
