@@ -48,7 +48,7 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Jewel James</h1>
+            <h1>Jewel JJames</h1>
             <h2>-Data & AI Consultant-</h2>
 	    <a href="images/Jewel_James_Resume.pdf" download="Jewel James Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
@@ -454,6 +454,26 @@
         </div>
     </div>
     <!-- End #projects -->
+	<!-- script -->
+<script>
+const projects = document.querySelectorAll('.project');
+
+projects.forEach(project => {
+  const overlayButton = project.querySelector('.project-overlay-button');
+  const projectInfo = project.querySelector('.project-info');
+  const closeButton = project.querySelector('.close-button');
+
+  overlayButton.addEventListener('click', () => {
+    project.classList.add('show-info');
+  });
+
+  closeButton.addEventListener('click', () => {
+    project.classList.remove('show-info');
+  });
+});
+</script>
+
+<!-- script ends -->
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
