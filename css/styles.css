@@ -131,7 +131,7 @@
 /* Additional Code */
 .project {
     flex: 1;
-    max-width: calc(20% - 20px); /* Adjust this value based on your design */
+    max-width: calc(40% - 40px); /* Adjust this value based on your design */
     margin: 10px;
 }
 
