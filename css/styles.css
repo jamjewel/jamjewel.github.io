@@ -79,6 +79,7 @@
 }
 
 .projects h2 {
+    position: absolute;
     color: #374054;
     margin-bottom: 50px;
 }
