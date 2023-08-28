@@ -93,6 +93,7 @@
     flex: 1;
     max-width: calc(40% - 40px);
     margin: 10px;
+    position: relative; /* Add this line */
 }
 
 .project-image {
@@ -100,25 +101,29 @@
 }
 
 .project-image-overlay {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 64, 84, 0.7); /* Semi-transparent background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add a smooth transition */
+}
+
+.project:hover .project-image-overlay {
+    opacity: 1; /* Show overlay on hover */
 }
 
 .view-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    display: none;
-    z-index: 1;
-}
-
-.project-image-overlay:hover .view-button {
-    display: block;
 }
 
 /* Additional Code */
