@@ -48,7 +48,7 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Jewel JJames</h1>
+            <h1>Jewel James</h1>
             <h2>-Data & AI Consultant-</h2>
 	    <a href="images/Jewel_James_Resume.pdf" download="Jewel James Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
@@ -366,25 +366,23 @@
 
 
     <div id="projects" class="background-alt">
-  <h2 class="heading">Projects</h2>
-  <div class="container">
-    <div class="row">
-      <div class="project shadow-large">
-        <div class="project-image">
-          <img src="images/stance (1).jpg" />
-          <div class="project-overlay">
-            <button class="project-overlay-button">Open Info</button>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3>Stance Classification in Tweets using NLP</h3>
-          <p>
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/stance (1).jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Stance Classification in Tweets using NLP</h3>
+                        <p>
                             This project was undertaken to do stance classification of tweet and discovering the best fitting deep learning model that can successfully classify stance (FAVOR, AGAINST, NONE) based on particular Target (topic) about a tweet.Final selection was made of LSTM model as they proved to work best in natural language processing scenario. Analysing intra variability of classes and imbalancing of data, efforts were taken to choose a balanced data set for training purpose. glove MODEL trained on wikipedia data was used .The data was transformed to task vocabulary to fit the model. The model after large iterations of fine tuning made it robust and provided an accuracy score on validation as 52.97 and test score as 53.8 respectively.
                         </p>
-          <a href="https://github.com/jamjewel/DeepLearningProject">View Project</a>
-          <span class="close-button">&times;</span>
-        </div>
-      </div>
+                        <a href="https://github.com/jamjewel/DeepLearningProject">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
                 <!-- End .project -->
 
                 <div class="project shadow-large">
@@ -454,26 +452,6 @@
         </div>
     </div>
     <!-- End #projects -->
-	<!-- script -->
-<script>
-const projects = document.querySelectorAll('.project');
-
-projects.forEach(project => {
-  const overlayButton = project.querySelector('.project-overlay-button');
-  const projectInfo = project.querySelector('.project-info');
-  const closeButton = project.querySelector('.close-button');
-
-  overlayButton.addEventListener('click', () => {
-    project.classList.add('show-info');
-  });
-
-  closeButton.addEventListener('click', () => {
-    project.classList.remove('show-info');
-  });
-});
-</script>
-
-<!-- script ends -->
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
