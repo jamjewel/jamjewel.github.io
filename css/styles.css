@@ -97,29 +97,22 @@
 }
 
 .project-image {
-    position: relative;
+    max-width: 100%; /* Added this line */
 }
 
 .project-image-overlay {
-    position: relative;
+    display: flex; /* Added this line */
+    align-items: center; /* Added this line */
+    justify-content: center; /* Added this line */
 }
 
 .view-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
+     background-color: rgba(128, 128, 128, 0.7);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    display: none;
-    z-index: 1;
-}
-
-.project-image-overlay:hover .view-button {
-    display: block;
+    display: inline-block; /* Changed this line */
 }
 
 /* Additional Code */
