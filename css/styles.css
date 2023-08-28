@@ -29,21 +29,28 @@
 }
 
 .video-image {
-    float: center; 
-    width: 100%; 
+    float: centre;
+    width: 100%;
+    position: relative; /* Add position */
+    overflow: hidden; /* Add overflow */
 }
 
 .video-info {
     position: absolute;
-    top: 0;
-    left: 60%; /* Position to the right of the video image */
-    width: 40%; /* Occupy 40% of the space */
-    height: 100%; /* Cover the full height of the video */
+    bottom: -100%; /* Initially, push the info below the image */
+    left: 0;
+    width: 40%;
+    height: 100%;
     padding: 21px;
     background-color: rgba(128, 128, 128, 0.7);
     border-radius: 4px;
     color: #fff;
-    box-sizing: border-box; /* Include padding in width and height */
+    box-sizing: border-box;
+    transition: bottom 0.3s ease; /* Add transition for smooth sliding */
+}
+
+.video-image:hover .video-info {
+    bottom: 0; /* Show info on hover by sliding it up */
 }
 
 .video-info h3 {
