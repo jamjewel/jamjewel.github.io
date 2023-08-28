@@ -29,18 +29,21 @@
 }
 
 .video-image {
-    float: center;
+    float: left; /* Change from 'center' to 'left' */
+    width: 60%; /* Occupy 60% of the space */
 }
 
 .video-info {
     position: absolute;
-    top: 50%;
-    left: 300px;
-    transform: translateY(-50%);
+    top: 0;
+    left: 60%; /* Position to the right of the video image */
+    width: 40%; /* Occupy 40% of the space */
+    height: 100%; /* Cover the full height of the video */
     padding: 21px;
-    background-color: rgba(128, 128, 128, 0.7); /* Semi-transparent grey background */
+    background-color: rgba(128, 128, 128, 0.7);
     border-radius: 4px;
-    color: #fff; /* White text color */
+    color: #fff;
+    box-sizing: border-box; /* Include padding in width and height */
 }
 
 .video-info h3 {
