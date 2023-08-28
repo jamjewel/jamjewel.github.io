@@ -29,15 +29,15 @@
 }
 
 .video-image {
-    float: centre;
-    width: 100%;
-    position: relative; /* Add position */
-    overflow: hidden; /* Add overflow */
+    float: left;
+    width: 60%;
+    position: relative;
+    overflow: hidden;
 }
 
 .video-info {
     position: absolute;
-    bottom: -100%; /* Initially, push the info below the image */
+    bottom: 0; /* Initially, the info is displayed at the bottom */
     left: 0;
     width: 40%;
     height: 100%;
@@ -46,11 +46,11 @@
     border-radius: 4px;
     color: #fff;
     box-sizing: border-box;
-    transition: bottom 0.3s ease; /* Add transition for smooth sliding */
+    transition: bottom 0.3s ease;
 }
 
 .video-image:hover .video-info {
-    bottom: 0; /* Show info on hover by sliding it up */
+    bottom: 100%; /* Slide the info up on hover */
 }
 
 .video-info h3 {
