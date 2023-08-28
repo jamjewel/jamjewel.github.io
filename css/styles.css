@@ -29,8 +29,8 @@
 }
 
 .video-image {
-    float: left; /* Change from 'center' to 'left' */
-    width: 60%; /* Occupy 60% of the space */
+    float: center; 
+    width: 100%; 
 }
 
 .video-info {
