@@ -29,8 +29,8 @@
 }
 
 .video-image {
-    float: left;
-    width: 60%;
+    float: center;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -38,7 +38,7 @@
 .video-info {
     position: absolute;
     bottom: 0; /* Initially, the info is displayed at the bottom */
-    left: 0;
+    left: 60;
     width: 40%;
     height: 100%;
     padding: 21px;
